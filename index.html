@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PHP Chat Application</title>
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<script src="./src/js/socket.io.js" crossorigin="anonymous"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment-with-locales.min.js"
+			integrity="sha512-LGXaggshOkD/at6PFNcp2V2unf9LzFq6LE+sChH7ceMTDP0g2kn6Vxwgg7wkPP7AAtX+lmPqPdxB47A0Nz0cMQ=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		></script>
+	</head>
+
+	<body>
+		<main>
+			<div class="container">
+				<div class="typing-flag">Typing...</div>
+				<div id="chat-box"></div>
+			</div>
+		
+			<form id="chat-form">
+				<input
+					type="text"
+					name="message"
+					autocomplete="off"
+					id="chat-input"
+				/>
+				<input type="submit" value="send" id="send-button" />
+			</form>
+		</main>
+		<footer>
+			<script src="./assets/js/chat.js"></script>
+		</footer>
+	</body>
+</html>
