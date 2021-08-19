@@ -1,5 +1,9 @@
 # PHP chat application with phpsocket.io
 
+## Install
+`composer install`
+
+
 ## start
 
 `php start.php start` for debug mode
